@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/palet3"
+    android:layout_marginBottom="20dp"
+    tools:context=".DetailBeritaFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <View
+            android:id="@+id/view"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="600dp"
+            android:background="@drawable/bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/marcos_rojo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <TextView
+            android:id="@+id/tvjudulBerita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_font"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Viral Tendangan 'Kung-fu' Marcos Rojo di Superclasico Argentina"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/avatar" />
+
+
+        <TextView
+            android:id="@+id/tvtanggalBerita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_font"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="36dp"
+            android:gravity="center"
+            android:text="13 Sep 2022"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvjudulBerita" />
+
+        <TextView
+            android:id="@+id/tvjurnalisBerita"
+            style="@style/ShapeAppearance.Material3.LargeComponent"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="160dp"
+            android:gravity="center"
+            android:text="Bayu baskoro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvtanggalBerita" />
+
+        <TextView
+            android:id="@+id/tvdeskripsiBerita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_font"
+            android:gravity="center"
+            android:text="Buenos Aires - Marcos Rojo diusir wasit dalam pertandingan Superclasico Argentina. Eks bek Manchester United itu melakukan tendangan 'kung-fu' ke arah lawan.
+Rojo sudah dua musim berkarier di Argentina setelah meninggalkan MU pada 2021. Bek 32 tahun itu saat ini membela salah satu tim raksasa Argentina, Boca Juniors."
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvjurnalisBerita" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
