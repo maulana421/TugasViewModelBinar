@@ -18,15 +18,11 @@ class DataBeritaAdapter(var dataBerita : MutableList<DataBerita>, val listern : 
 
     override fun onBindViewHolder(holder: DataBeritaViewHolder, position: Int) {
         holder.binding.apply {
-            val judulber = dataBerita[position]
-            val tanggalber = dataBerita[position]
-            val jurnaliss = dataBerita[position]
-            val desc = dataBerita[position]
-            val gambar = dataBerita[position]
-            tvjudulBerita.text = judulber.toString()
-            tvTanggal.text = tanggalber.toString()
-            tvJurnalis.text = jurnaliss.toString()
-            tvDesc.text = desc.toString()
+            tvjudulBerita.text = dataBerita[position].judul
+            tvTanggal.text = dataBerita[position].tanggal
+            tvJurnalis.text = dataBerita[position].jurnalis
+            tvDesc.text = dataBerita[position].judul
+            imgBerita.setImageResource(dataBerita[position].img)
 
             cardSatu.setOnClickListener {
                 listern.onClick(dataBerita[position])
